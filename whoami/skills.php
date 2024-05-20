@@ -1,0 +1,121 @@
+<?php
+/**
+ * ACF Field Groups for WhoAmI Options: Skills
+ *
+ * @package whoami
+ */
+
+acf_add_local_field_group( array(
+	'key' => 'group_663e6067a2267',
+	'title' => 'Skills',
+	'fields' => array(
+		array(
+			'key' => 'field_663e66e924ebc',
+			'label' => '',
+			'name' => 'categories',
+			'aria-label' => '',
+			'type' => 'repeater',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'layout' => 'block',
+			'pagination' => 0,
+			'min' => 0,
+			'max' => 0,
+			'collapsed' => '',
+			'button_label' => 'Add Category',
+			'rows_per_page' => 20,
+			'sub_fields' => array(
+				array(
+					'key' => 'field_663e676b24ebd',
+					'label' => 'Category',
+					'name' => 'category',
+					'aria-label' => '',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'maxlength' => '',
+					'placeholder' => 'Category',
+					'prepend' => '',
+					'append' => '',
+					'parent_repeater' => 'field_663e66e924ebc',
+				),
+				array(
+					'key' => 'field_663e6067aeac6',
+					'label' => '',
+					'name' => 'skills',
+					'aria-label' => '',
+					'type' => 'repeater',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'layout' => 'block',
+					'min' => 0,
+					'max' => 0,
+					'collapsed' => '',
+					'button_label' => 'Add Skill',
+					'rows_per_page' => 20,
+					'sub_fields' => array(
+						array(
+							'key' => 'field_663e6067b4217',
+							'label' => '',
+							'name' => 'skill',
+							'aria-label' => '',
+							'type' => 'text',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'default_value' => '',
+							'maxlength' => '',
+							'placeholder' => 'Skill',
+							'prepend' => '•',
+							'append' => '',
+							'parent_repeater' => 'field_663e6067aeac6',
+						),
+					),
+					'parent_repeater' => 'field_663e66e924ebc',
+				),
+			),
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'options_page',
+				'operator' => '==',
+				'value' => 'whoami',
+			),
+		),
+	),
+	'menu_order' => 1,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => 'Global content for WhoAmI: Skills',
+	'show_in_rest' => 1,
+) );
