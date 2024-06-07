@@ -30,6 +30,7 @@ if( ! function_exists( 'whoami_add_acf_field_group' ) ) {
 
 	function whoami_add_acf_field_group() {
 		$acfs = array(
+			'summary',
 			'skills',
 			'knowledge',
 			'experience',
